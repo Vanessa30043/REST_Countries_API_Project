@@ -1,0 +1,113 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        .active{
+            display:block;
+        }
+        .inactive{
+            display:none
+        }
+        body{
+            background:#0e0e0e;
+        }
+        #container{
+            background:rgb(255,255,255);
+            width: 30%;
+            height:55%;
+            top:50%;
+            left:56%;
+            transform:translate(-105%,-80%) scale (1.25);
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+        #container, #container_2{
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 8px 0 rgba(0,0,0,0.37);
+            backdrop-filter:blur(4px);
+            border-radius:10 px;
+            border:1px solid rgba(255,255,255,0.18);
+            position:absolute;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction:column;
+        }
+
+        #container_2{
+            width:37.5%;
+            left: 32.5%;
+            top:80%;     
+        }
+        #flag{
+            width:170px;
+            border:1px solid rgba(255,255,255,0.9);
+            position:relative;
+            top:30px;
+        }
+        #searchButton, #extraInfoButton{
+            position:absolute;
+            top:9.7%;
+            right:10%;
+            height:30px ;
+            border-radius:4px;
+            border:1px solid rgba(255,255,255,0.18);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+            background: #2059df;
+            color: white;
+            cursor: pointer;
+        }
+        #extraInfoButton{
+            background:#FF4434;
+            right: 6.5%;
+            width:70px;
+        }
+        #countryName{
+            position:absolute;
+            font-weight:bold;
+            top:55%;
+        }
+        #countryInput{
+            position:absolute;
+            top:10%;
+            border: transparent;
+            outline:none;
+            border-radius:2px;
+            transition:0.3s;
+            width:50%;
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+            backdrop-filter: blue(4px);
+            caret-color:white;
+            color:white;
+            height:25px;
+            cursor:pointer
+        }
+        #countryInput::placeholder{
+            color:white
+        }
+        .bold{
+            font-family:'Poppins' ,sans-serif;
+            font-weight:bold;
+        }
+        #info li, #extra-info li{
+            font-family:sans-serif;
+            color:white;
+        }
+
+        #info{
+            position:relative;
+            top:50px;
+        }
+        #countryName{
+            color:white;
+            font-family:'Poppins',sans-serif;
+        }
+        ul{
+            list-style-type:none;
+        }
+        #extra-info li, #infor li{
+            font-size:16px;
+        }
+        
+
+        
+
+    
