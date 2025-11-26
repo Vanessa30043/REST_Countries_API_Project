@@ -103,9 +103,36 @@
         ul{
             list-style-type:none;
         }
-        #extra-info li, #infor li{
+        #extra-info li, #info li{
             font-size:16px;
         }
+        #container.inactive{
+            height:20%;
+            top:40%
+        }
+        #container.active{
+            height:55%;
+            top:55%;
+        }
+
+        #container.active{
+            height:5%;
+            top:55%
+        }
+        #container_2.inactive{
+            display:none;
+        }
+        #container.active{
+            top:75%;
+        }
+        #container_2 ul li{
+            fonr-size:20px;
+        }
+
+
+
+    
+        
         
 
         
