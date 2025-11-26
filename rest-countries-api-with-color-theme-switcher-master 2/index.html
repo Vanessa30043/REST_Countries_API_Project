@@ -3,17 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project - REST Countries API - Vanessa Sierra</title>
+  <title>REST Countries API - Vanessa Sierra</title>
 
-  <!-- Link CSS and script (use straight quotes and valid paths) -->
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
   <link rel="stylesheet" href="styles.css">
-  <script src="index.js" defer></script>
+  <script defer src="index.js"></script>
 </head>
-<body>
+<body class="light-theme">
+  <!-- HEADER WITH THEME SWITCH -->
+  <header>
+    <h1>REST Countries API</h1>
+    <button id="themeToggle">Dark Mode</button>
+  </header>
+
+  <!-- MAIN CONTAINER -->
   <div id="container" class="inactive">
     <input type="text" id="countryInput" class="active" placeholder="Enter a country name...">
     <span id="countryName"></span>
-    <!-- give the image an id so JS can update its src -->
     <img id="flag" src="" alt="Country flag" class="inactive">
     <ul id="info" class="inactive">
       <li id="officialName">Official name</li>
@@ -26,6 +33,7 @@
     <button id="extraInfoButton" class="inactive">More info</button>
   </div>
 
+  <!-- EXTRA INFO CONTAINER -->
   <div id="container_2" class="inactive">
     <ul id="extra--info">
       <li id="extra-info">Extra info</li>

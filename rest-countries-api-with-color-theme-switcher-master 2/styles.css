@@ -1,140 +1,144 @@
+/* RESET & FONT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-        .active{
-            display:block;
-        }
-        .inactive{
-            display:none
-        }
-        body{
-            background:#0e0e0e;
-        }
-        #container{
-            background:rgb(255,255,255);
-            width: 30%;
-            height:55%;
-            top:50%;
-            left:56%;
-            transform:translate(-105%,-80%) scale (1.25);
-            box-shadow: 0 0 20px rgba(0,0,0,0.7);
-        }
-        #container, #container_2{
-            background: rgba(255,255,255,0.1);
-            box-shadow: 0 8px 0 rgba(0,0,0,0.37);
-            backdrop-filter:blur(4px);
-            border-radius:10 px;
-            border:1px solid rgba(255,255,255,0.18);
-            position:absolute;
-            display:flex;
-            justify-content: center;
-            align-items:center;
-            flex-direction:column;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
 
-        #container_2{
-            width:37.5%;
-            left: 32.5%;
-            top:80%;     
-        }
-        #flag{
-            width:170px;
-            border:1px solid rgba(255,255,255,0.9);
-            position:relative;
-            top:30px;
-        }
-        #searchButton, #extraInfoButton{
-            position:absolute;
-            top:9.7%;
-            right:10%;
-            height:30px ;
-            border-radius:4px;
-            border:1px solid rgba(255,255,255,0.18);
-            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-            background: #2059df;
-            color: white;
-            cursor: pointer;
-        }
-        #extraInfoButton{
-            background:#FF4434;
-            right: 6.5%;
-            width:70px;
-        }
-        #countryName{
-            position:absolute;
-            font-weight:bold;
-            top:55%;
-        }
-        #countryInput{
-            position:absolute;
-            top:10%;
-            border: transparent;
-            outline:none;
-            border-radius:2px;
-            transition:0.3s;
-            width:50%;
-            background: rgba(255,255,255,0.1);
-            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-            backdrop-filter: blue(4px);
-            caret-color:white;
-            color:white;
-            height:25px;
-            cursor:pointer
-        }
-        #countryInput::placeholder{
-            color:white
-        }
-        .bold{
-            font-family:'Poppins' ,sans-serif;
-            font-weight:bold;
-        }
-        #info li, #extra-info li{
-            font-family:sans-serif;
-            color:white;
-        }
+/* LIGHT / DARK THEMES */
+body.light-theme {
+    background: #f2f2f2;
+    color: #111;
+}
 
-        #info{
-            position:relative;
-            top:50px;
-        }
-        #countryName{
-            color:white;
-            font-family:'Poppins',sans-serif;
-        }
-        ul{
-            list-style-type:none;
-        }
-        #extra-info li, #info li{
-            font-size:16px;
-        }
-        #container.inactive{
-            height:20%;
-            top:40%
-        }
-        #container.active{
-            height:55%;
-            top:55%;
-        }
+body.dark-theme {
+    background: #202c37;
+    color: #fff;
+}
 
-        #container.active{
-            height:5%;
-            top:55%
-        }
-        #container_2.inactive{
-            display:none;
-        }
-        #container.active{
-            top:75%;
-        }
-        #container_2 ul li{
-            font-size:20px;
-        }
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+header h1 {
+    font-size: 1.5rem;
+}
 
+header button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
 
-    
-        
-        
+/* ACTIVE / INACTIVE */
+.active {
+    display: block;
+}
 
-        
+.inactive {
+    display: none;
+}
 
-    
+/* MAIN CONTAINER */
+#container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* INPUT */
+#countryInput {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTONS */
+#searchButton,
+#extraInfoButton {
+    margin: 0.5rem 0.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#searchButton {
+    background-color: #2059df;
+    color: #fff;
+}
+
+#extraInfoButton {
+    background-color: #FF4434;
+    color: #fff;
+}
+
+/* FLAG */
+#flag {
+    width: 150px;
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* INFO LIST */
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* EXTRA INFO CONTAINER */
+#container_2 {
+    width: 90%;
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+
+    #container,
+    #container_2 {
+        width: 50%;
+    }
+}
+
+/* BOLD labels inside info */
+.bold {
+    font-weight: bold;
+}
