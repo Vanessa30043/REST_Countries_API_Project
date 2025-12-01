@@ -149,12 +149,25 @@ GitHub – https://github.com/Vanessa30043
 Frontend Mentor – (Vanessa30043)
 
 🙏 Acknowledgments
+
 Shoutout to:
 
 Frontend Mentor for structured beginner-friendly challenges
 
 YouTube creators who break concepts down simply
 
-My instructors at Per Scholas who taught foundational JavaScript
 
 My classmate that share his thoughts and suggested edits in my code.
+
+
+This project was created using references and tutorials from:
+
+W3Schools
+
+Per-Scholas Software Engineering Curriculum and My instructors at Per Scholas who taught foundational JavaScript.
+
+Google search for concepts and code
+
+ReadMe Template Inspiration – DomPizzie Gist
+
+emojis inspo: https://towardsdev.com/how-to-add-emojis-to-your-github-readme-and-other-markdown-files-c8f13b3f9de4
