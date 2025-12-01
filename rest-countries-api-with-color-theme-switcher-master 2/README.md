@@ -43,7 +43,7 @@ This project also allowed me to practice concepts I previously used in my **Type
 
 ### 🖼 Screenshot
 
-*(Add your screenshot here once you take it)*  
+*(My screenshot)*  
 
 
 
