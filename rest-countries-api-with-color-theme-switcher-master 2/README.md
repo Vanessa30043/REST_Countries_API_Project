@@ -46,8 +46,7 @@ This project also allowed me to practice concepts I previously used in my **Type
 *(Add your screenshot here once you take it)*  
 
 
-yaml
-Copy code
+
 
 ---
 
