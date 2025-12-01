@@ -97,4 +97,12 @@ header button {
         justify-content: center;
     }
 
+    .title {
+        font-size: 16px; 
+    }
+
+    .header-content p{
+        font-size: 12px;
+    }
+
 }
