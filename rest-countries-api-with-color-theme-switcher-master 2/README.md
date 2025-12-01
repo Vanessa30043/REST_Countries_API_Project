@@ -156,7 +156,6 @@ Frontend Mentor for structured beginner-friendly challenges
 
 YouTube creators who break concepts down simply
 
-
 My classmate that share his thoughts and suggested edits in my code.
 
 
