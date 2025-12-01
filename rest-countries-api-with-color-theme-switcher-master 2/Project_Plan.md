@@ -1,8 +1,8 @@
 
-# 📄 **Separate File: "PROJECT_PLAN.md" (How I Tackled This Project)**
+# 📄 ** "PROJECT_PLAN.md" (How I Tackled This Project)**
 
 
-# Project Plan: How I Tackled the REST Countries API Challenge
+# REST Countries API Challenge
 
 This document explains my step-by-step plan, thinking process, and how I completed this project as a beginner.
 
