@@ -1,5 +1,5 @@
 
-# 📄 ** "PROJECT_PLAN.md" (How I Tackled This Project)**
+# 📄 ** PROJECT_PLAN.md (How I Tackled This Project)**
 
 
 # REST Countries API Challenge
