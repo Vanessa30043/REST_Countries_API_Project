@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
   <link rel="stylesheet" href="styles.css">
-  <script src="index.js" defer></script>
+  <script src="index.js"></script>
 </head>
+
 <body class="light-theme">
   <!-- HEADER WITH THEME SWITCH -->
   <header>
@@ -17,7 +19,24 @@
     <button id="themeToggle">Dark Mode</button>
   </header>
 
-  <!-- MAIN CONTAINER -->
+<main>
+  <div class="countries-container">
+
+    <a href="#" class="country-card">
+      <img src="https://flagcdn.com/is.svg" alt="flag" />
+      <div class="card-text">
+        <h3 class="card-title">Iceland</h3>
+        <p><b>Population:</b>398,266</p>
+        <p><b>Region: </b>Europe</p>
+        <p><b>Capital: </b>Reykjavík</p>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+
+  <!-- MAIN CONTAINER 
   <div id="container" class="inactive">
     <input type="text" id="countryInput" class="active" placeholder="Enter a country name...">
     <span id="countryName"></span>
@@ -33,15 +52,16 @@
     <button id="extraInfoButton" class="inactive">More info</button>
   </div>
 
-  <!-- EXTRA INFO CONTAINER -->
+  <!-EXTRA INFO CONTAINER 
   <div id="container_2" class="inactive">
     <ul id="extra--info">
       <li id="extra-info">Extra info</li>
-      <li id="car">Car</li>
+      <li id="car">Car Side </li>
       <li id="subregion">Subregion</li>
       <li id="startOfWeek">Start of Week</li>
       <li id="language">Language</li>
     </ul>
   </div>
+         --> 
 </body>
 </html>
