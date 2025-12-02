@@ -1,23 +1,15 @@
-const countryName = new URLSearchParams(location.search).get('name')
-const flagImage = document.querySelector('.country-details img')
-const countryNameH1 = document.querySelector('.country-details h1')
-const population = document.querySelector('.population')
-const region = document.querySelector('.region')
-const subRegion = document.querySelector('.sub-region')
-const capital = document.querySelector('.capital')
-const topLevelDomain = document.querySelector('.top-level-domain')
-const currencies = document.querySelector('.currencies')
-const languages = document.querySelector('.languages')
-const borderCountries = document.querySelector('.border-countries')
-fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`).then((res) => res.json())
-.then((res)=> res.json())
-.then((country) => {
-    console.log(object.values(country.name.nativeName)[0].common)
-    flagImage.src = country.flags.svg
-    countryNameH1.innerText = country.name.common
+// Get the country name from the URL
+const selectedCountry = new URLSearchParams(window.location.search).get('name')
 
-    if( country.name.nativeName){
-        console.log(object.values(country.name.nativeName)[0].common)
-    }
-})
-
+// Get all the elements we want to fill with data
+const flagImg = document.querySelector('.country-details img')
+const countryTitle = document.querySelector('.country-details h1')
+const nativeNameEl = document.querySelector('.native-name')
+const populationEl = document.querySelector('.population')
+const regionEl = document.querySelector('.region')
+const subRegionEl = document.querySelector('.sub-region')
+const capitalEl = document.querySelector('.capital')
+const tldEl = document.querySelector('.top-level-domain')
+const currenciesEl = document.querySelector('.currencies')
+const languagesEl = document.querySelector('.languages')
+const bordersEl = document.querySelector('.border-countries')
