@@ -1,8 +1,8 @@
 // Get HTML elements
-let countriesContainer = document.querySelector(".countries-container");
-let regionFilter = document.getElementById("regionFilter");
-let searchInput = document.getElementById("searchInput");
-let themeButton = document.getElementById("themeToggle");
+const countriesContainer = document.querySelector(".countries-container");
+const regionFilter = document.getElementById("regionFilter");
+const  searchInput = document.getElementById("searchInput");
+const themeButton = document.getElementById("themeToggle");
 
 // Store all country data
 let allCountriesData = [];
