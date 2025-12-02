@@ -59,3 +59,20 @@ function showCountries(list) {
     countriesContainer.appendChild(card);
   }
 }
+
+// Search functionality
+searchInput.addEventListener("input", function() {
+  let searchText = searchInput.value.toLowerCase();
+  let filtered = [];
+
+  for (let i = 0; i < allCountriesData.length; i++) {
+    let country = allCountriesData[i];
+    if (country.name.common.toLowerCase().indexOf(searchText) !== -1) {
+      filtered.push(country);
+    }
+  }
+
+  showCountries(filtered);
+});
+
+
