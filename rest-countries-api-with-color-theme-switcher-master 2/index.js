@@ -76,3 +76,18 @@ searchInput.addEventListener("input", function() {
 });
 
 
+// Region filter functionality
+regionFilter.addEventListener("change", function() {
+  let region = regionFilter.value;
+  let filtered = [];
+
+  for (let i = 0; i < allCountriesData.length; i++) {
+    let country = allCountriesData[i];
+    if (region === "" || country.region === region) {
+      filtered.push(country);
+    }
+  }
+
+  showCountries(filtered);
+});
+
