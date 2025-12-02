@@ -28,4 +28,14 @@ fetch('https://restcountries.com/v3.1/name/' + selectedCountry + '?fullText=true
     console.log('Error fetching country data:', err)
   })
 
-  
+  // Fill the main info
+    flagImg.src = country.flags.svg
+    countryTitle.innerText = country.name.common
+    populationEl.innerText = country.population.toLocaleString()
+    regionEl.innerText = country.region
+    tldEl.innerText = country.tld ? country.tld.join(', ') : 'N/A'
+    capitalEl.innerText = country.capital ? country.capital[0] : 'No capital'
+    subRegionEl.innerText = country.subregion ? country.subregion : 'No subregion'
+
+
+    
