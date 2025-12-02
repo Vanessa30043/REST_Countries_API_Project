@@ -52,8 +52,8 @@ This project also allowed me to practice concepts I previously used in my **Type
 
 ### 🔗 Links
 
-- **Solution URL:** *(Add link)*
-- **Live Site URL:** *(Add link)*
+- **Solution URL:** *https://github.com/Vanessa30043/REST_Countries_API_Project*
+- **Live Site URL:** *https://vanessa30043.github.io/REST_Countries_API_Project/*
 
 ---
 
@@ -63,8 +63,6 @@ This project also allowed me to practice concepts I previously used in my **Type
 
 - Semantic **HTML5**  
 - **CSS custom properties** (variables)  
-- Flexbox  
-- CSS Grid  
 - Mobile-first workflow 
 - Vanilla **JavaScript (ES6+)**  
 - Fetch API  
@@ -156,7 +154,7 @@ Frontend Mentor for structured beginner-friendly challenges
 
 YouTube creators who break concepts down simply
 
-My classmate that share his thoughts and suggested edits in my code.
+My classmates that share their thoughts and suggested edits in my code.
 
 
 This project was created using references and tutorials from:

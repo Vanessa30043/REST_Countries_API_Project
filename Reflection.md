@@ -1,0 +1,9 @@
+📝 Reflection
+
+Building the REST Countries API with Color Theme Switcher project was a meaningful step in my growth as a beginner developer. Throughout this challenge, I focused on strengthening my understanding of API requests, DOM manipulation, and structuring a project from start to finish. One of the biggest challenges I faced was learning how to properly fetch and handle data from the REST Countries API. At first, I didn’t realize that I needed to request specific fields such as population, which caused undefined values and confusion. Through debugging and reading the API documentation more closely, I learned how to request only the fields I needed and how to access nested object values correctly.
+
+Another challenge was organizing the logic for rendering country cards and handling user interactions like searching, filtering, and clicking into detailed pages. I often ran into small logical mistakes, but each error helped me better understand how the DOM responds to dynamic JavaScript. Implementing the theme switcher was also a valuable lesson in how CSS variables and JavaScript can work together to update UI states instantly.
+
+I solved most issues by breaking problems down step-by-step, using console logs, and researching beginner-friendly explanations on MDN and YouTube. These strategies helped me create cleaner code and build more confidence in async JavaScript and event-driven programming.
+
+Looking forward, I want to improve the modularity of my JavaScript, write functions that are easier to maintain, and eventually rebuild this project using React. Overall, this project not only strengthened my technical skills but also improved my ability to debug, research, and think like a developer.
