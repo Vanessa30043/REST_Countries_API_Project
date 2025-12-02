@@ -3,7 +3,7 @@
 This is my solution to the **REST Countries API with Color Theme Switcher** challenge on Frontend Mentor. This project helped me strengthen my JavaScript, DOM manipulation, API handling, and beginner-friendly UI logic. It also served as great practice for structuring a project, debugging, and writing clean code that works.
 
 Live Demo + Repo  
-*( will add  links once ready)*
+*https://vanessa30043.github.io/REST_Countries_API_Project/*
 
 ---
 
