@@ -38,4 +38,12 @@ fetch('https://restcountries.com/v3.1/name/' + selectedCountry + '?fullText=true
     subRegionEl.innerText = country.subregion ? country.subregion : 'No subregion'
 
 
+    // Fill native name
+    if (country.name.nativeName) {
+      const nativeNames = Object.values(country.name.nativeName)
+      nativeNameEl.innerText = nativeNames[0].common
+    } else {
+      nativeNameEl.innerText = country.name.common
+    }
+
     
