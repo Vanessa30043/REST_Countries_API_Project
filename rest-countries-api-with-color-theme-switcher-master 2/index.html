@@ -2,66 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REST Countries API - Vanessa Sierra</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where in the World?</title>
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
-  <link rel="stylesheet" href="styles.css">
-  <script src="index.js"></script>
+  <!-- Fonts and basic styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--font awesome-->
+
+  <!-- JS script with defer so it runs after HTML is loaded -->
+  <script src="index.js" defer></script>
 </head>
 
 <body class="light-theme">
-  <!-- HEADER WITH THEME SWITCH -->
+  <!-- Header with dark mode button -->
   <header>
     <h1>Where in the World?</h1>
-    <button id="themeToggle">Dark Mode</button>
+    <!-- <button id="themeToggle">Dark Mode</button> -->
+    <div id="darkmode">
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        <span>Dark Mode</span>
+      </button>
+    </div>
+
   </header>
 
-<main>
-  <div class="countries-container">
+  <!-- Search and region filter -->
+  <main>
+    <div class="search-filter-container">
+      <input type="text" id="searchInput" placeholder="Search for a country..." />
+      <select id="regionFilter">
+        <option value="">All Regions</option>
+        <option value="Africa">Africa</option>
+        <option value="America">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
 
-    <a href="#" class="country-card">
-      <img src="https://flagcdn.com/is.svg" alt="flag" />
-      <div class="card-text">
-        <h3 class="card-title">Iceland</h3>
-        <p><b>Population:</b>398,266</p>
-        <p><b>Region: </b>Europe</p>
-        <p><b>Capital: </b>Reykjavík</p>
-      </div>
-    </a>
-
-  </div>
-</main>
-
-
-  <!-- MAIN CONTAINER 
-  <div id="container" class="inactive">
-    <input type="text" id="countryInput" class="active" placeholder="Enter a country name...">
-    <span id="countryName"></span>
-    <img id="flag" src="" alt="Country flag" class="inactive">
-    <ul id="info" class="inactive">
-      <li id="officialName">Official name</li>
-      <li id="capital">Capital</li>
-      <li id="population">Population</li>
-      <li id="continent">Continent</li>
-      <li id="currency">Currency</li>
-    </ul>
-    <button id="searchButton" class="active">Search</button>
-    <button id="extraInfoButton" class="inactive">More info</button>
-  </div>
-
-  <!-EXTRA INFO CONTAINER 
-  <div id="container_2" class="inactive">
-    <ul id="extra--info">
-      <li id="extra-info">Extra info</li>
-      <li id="car">Car Side </li>
-      <li id="subregion">Subregion</li>
-      <li id="startOfWeek">Start of Week</li>
-      <li id="language">Language</li>
-    </ul>
-  </div>
-         --> 
+    <!-- Container for country cards -->
+    <div class="countries-container"></div>
+  </main>
 </body>
+
 </html>
