@@ -13,3 +13,19 @@ const tldEl = document.querySelector('.top-level-domain')
 const currenciesEl = document.querySelector('.currencies')
 const languagesEl = document.querySelector('.languages')
 const bordersEl = document.querySelector('.border-countries')
+
+
+// Fetch the main country info
+fetch('https://restcountries.com/v3.1/name/' + selectedCountry + '?fullText=true')
+  .then(function(response) {
+    return response.json()
+  })
+  .then(function(data) {
+    const country = data[0] // the first result is our country
+    // Next commits will fill this country’s info into the page
+  })
+  .catch(function(err) {
+    console.log('Error fetching country data:', err)
+  })
+
+  
