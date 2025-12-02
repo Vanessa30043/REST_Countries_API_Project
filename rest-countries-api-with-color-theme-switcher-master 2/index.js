@@ -91,3 +91,8 @@ regionFilter.addEventListener("change", function() {
   showCountries(filtered);
 });
 
+// Dark mode toggle
+themeButton.addEventListener("click", function() {
+  document.body.classList.toggle("dark");
+});
+
